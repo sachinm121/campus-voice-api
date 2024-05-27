@@ -10,7 +10,7 @@ exports.connect = () => {
     .then(() => console.log(colors.green('Database Connected Successfully')))
     .catch((error) => {
         console.log(colors.red.underline('Database Connection Filed'))
-        confirm.error(error);
+        console.error(error);
         process.exit(1);
     })
 };
